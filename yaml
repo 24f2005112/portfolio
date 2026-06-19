@@ -1,1 +1,16 @@
 .github/workflows/verify.yml
+
+
+name: Verify Assignment Email
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 24f2005112@ds.study.iitm.ac.in
+        run: echo "Workflow triggered successfully"
