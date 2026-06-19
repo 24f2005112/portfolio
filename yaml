@@ -1,6 +1,3 @@
-.github/workflows/verify.yml
-
-
 name: Verify Assignment Email
 
 on:
@@ -12,5 +9,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
       - name: 24f2005112@ds.study.iitm.ac.in
-        run: echo "Workflow triggered successfully"
+        run: echo "Step verification successful"
